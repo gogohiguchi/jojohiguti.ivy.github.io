@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ジョジョの奇妙な冒険</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>HIGUCHI/ジョジョの奇妙な冒険</title>
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
@@ -18,32 +18,84 @@
         { document.write('<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=2, user-scalable=yes">'); }
       </script>
     </head>
-<body class>
+<body>
     <div class="st-Container">
         <header class="st-Header " id="st-Header">
+
         <div class="st-Header_Inner">
             <div class="logos">
             <nav>
-            <div class="logo sp_b"><a><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/common/img_logo.png" alt="JOJO PORTAL SITE"/></a></div>
+            <div class="logo sp_b"><a><img src="img/img_logo_horizontal.webp" alt="JOJO PORTAL SITE" /></a></div>
             <ul>
-                <li><a href="#about"><span>概要</span></a></li>
-                <li><a href="#parts"><span>ABOUT</span></a></li>
-                <li><a href="#characters"><span>CHARACTERS</span></a></li>
+              <li><a href="#parts" id="parts-link"><span>PARTS</span></a></li>
+              <li><a href="#about" id="about-link"><span>ABOUT</span></a></li>
+              <li><a href="#characters" id="characters-link"><span>CHARACTERS</span></a></li>
             </ul>
+            <audio id="parts-sound" src="audio/DIO-time-stop.mp3" preload="auto"></audio>
+            <audio id="about-sound" src="audio/StarPlatinum-The・World.mp3" preload="auto"></audio>
+            <audio id="characters-sound" src="audio/Kingu-crimson.mp3" preload="auto"></audio>
             </nav>
-        </div>
-        </header>      <div class="idx-Contents">
+        </div>    
+        </header>
 
         <main>
-            <section id="about">
-                <h2><strong>概要</strong></h2>
-                <!-- 概要の内容をここに記述 -->
-                <p><strong>『ジョジョの奇妙な冒険』</strong>は、荒木飛呂彦による日本の漫画作品で、1987年に連載が開始されました。この作品は、複数の世代にわたるジョースター家の冒険を描いており、独特のスタンド能力や独創的なキャラクターデザインで知られています。</p>
-            </section>
-            
+        <!---->
+        <button type="button" id="btn1" >BITE THE DUST</button>
+        <audio id="click-sound" src="audio/bokudan_aLdUcMh.mp3" preload="auto"></audio>
+        <!---->
+        <button type="button" id="btn2" ><img src="img/To_Be_Continued.png" alt="To_Be_Continued"></button>
+        <audio id="sounds1" src="audio/切り裂いた首の傷.mp3" preload="auto"></audio>
+        <audio id="sounds2" src="audio/Dirty-deeds-done-dirt-cheep.mp3" preload="auto"></audio>
+        <audio id="sounds3" src="audio/Round_About.mp3" preload="auto"></audio>
+        <audio id="sounds4" src="audio/どじゃああぁぁん.mp3" preload="auto"></audio>
+        <audio id="sounds5" src="audio/だが断る.mp3" preload="auto"></audio>
+        <audio id="sounds6" src="audio/靴の中のシチュー.mp3" preload="auto"></audio>   
+        <audio id="sounds7" src="audio/パンの枚数.mp3" preload="auto"></audio>
+        <audio id="sounds8" src="audio/ドッピオ.mp3" preload="auto"></audio>
+        <audio id="sounds9" src="audio/スタープラチナ・ザ・ワールド.mp3" preload="auto"></audio>
+        <audio id="sounds10" src="audio/人間をやめるぞ.mp3" preload="auto"></audio>
+        <audio id="sounds11" src="audio/人間賛歌.mp3" preload="auto"></audio>
+        <audio id="sounds12" src="audio/何をするだァーー.mp3" preload="auto"></audio>
+        <audio id="sounds13" src="audio/山吹色の波紋疾走.mp3" preload="auto"></audio>
+        <audio id="sounds14" src="audio/ジョナサンVSディオ.mp3" preload="auto"></audio>
+        <audio id="sounds15" src="audio/ツェペリ魂.mp3" preload="auto"></audio>
+        <audio id="sounds16" src="audio/ジョセフ.mp3" preload="auto"></audio>
+        <audio id="sounds17" src="audio/お仕置きの時間だよ.mp3" preload="auto"></audio>
+        <audio id="sounds18" src="audio/最後の波紋.mp3" preload="auto"></audio>
+        <audio id="sounds19" src="audio/この物語は.mp3" preload="auto"></audio>
+        <audio id="sounds20" src="audio/ありがとうそれしか言う言葉が見つからない.mp3" preload="auto"></audio>
+        <audio id="sounds21" src="audio/離れろ！時を止めるんだァああ！！.mp3" preload="auto"></audio> 
+        <audio id="sounds22" src="audio/黄金長方形の軌跡.mp3" preload="auto"></audio>  
+        <audio id="sounds23" src="audio/一番の近道.mp3" preload="auto"></audio>
+        <audio id="sounds24" src="audio/覚悟はいいか.mp3" preload="auto"></audio>
+        <audio id="sounds25" src="audio/ドイツの医学薬学は世界一ィィィ！.mp3" preload="auto"></audio>    
+        <audio id="sounds26" src="audio/こんな身体になった俺を気の毒なんて思うなよ？.mp3" preload="auto"></audio>
+        <audio id="sounds27" src="audio/ありのまま、今起こったことを話すぜ.mp3" preload="auto"></audio>
+        <audio id="sounds28" src="audio/吐き気を催す邪悪.mp3" preload="auto"></audio>
+        <audio id="sounds29" src="audio/てめーはおれを怒らせた.mp3" preload="auto"></audio>
+        <audio id="sounds30" src="audio/ジョジョ-アイキャッチ.mp3" preload="auto"></audio>
+        <audio id="sounds31" src="audio/考えるのをやめた.mp3" preload="auto"></audio>
+        <audio id="sounds32" src="audio/こいつはくせえッ！.mp3" preload="auto"></audio>
+        <audio id="sounds33" src="audio/質問を質問で返すなッ！.mp3" preload="auto"></audio>
+        <audio id="sounds34" src="audio/一旦おめえを治せば.mp3" preload="auto"></audio>
+        <audio id="sounds35" src="audio/お前は自分が悪だと気づいていない.mp3" preload="auto"></audio>
+        <audio id="sounds36" src="audio/覚悟とは.mp3" preload="auto"></audio>
+        <audio id="sounds37" src="audio/真実から出た誠の行動.mp3" preload="auto"></audio>
+        <audio id="sounds38" src="audio/裁くのは、俺のスタンドだ.mp3" preload="auto"></audio>
+        <audio id="sounds39" src="audio/大切なのは真実に向かうことだ.mp3" preload="auto"></audio>
+        <audio id="sounds40" src="audio/俺の心はアポロ11号だ.mp3" preload="auto"></audio>
+        <audio id="sounds41" src="audio/崖に激突するツバメ.mp3" preload="auto"></audio>
+        <audio id="sounds42" src="audio/14の言葉.mp3" preload="auto"></audio>
+        <audio id="sounds43" src="audio/やめとけやめとけ.mp3" preload="auto"></audio>
+
+        <audio id="sounds6" src=".mp4" preload="auto"></audio>
+        <h2><strong>概要</strong></h2>
+        <!-- 概要の内容をここに記述 -->
+        <p><strong>『ジョジョの奇妙な冒険』</strong>は、荒木飛呂彦による日本の漫画作品で、1987年に連載が開始されました。この作品は、複数の世代にわたるジョースター家の冒険を描いており、独特のスタンド能力や独創的なキャラクターデザインで知られています。</p>
+
             <section id="parts">
                 <div class="idx-Pickup_Inner">
-                    <h2 class="idx-Subtitle">各部の情報</h2>
+                    <h2 class="idx-Subtitle">～PARTS～</h2>
                     <div class="wrap">
                         <div class="slider slider-1">
                             <div class="Slide">
@@ -136,44 +188,63 @@
                               </div>             
                           </div>
                         </div>
-                        
+                        <div>
+                          <div class="aaa-arrow"></div>             
+                        </div>
                     </div>
-                </div>
+
             </section>
-        
+<br>
+          <section id="about">
+            <h2 class="idx-Subtitle">～ABOUT～</h2>
+            <div class="abt-Box"><span class="anchor-target" id="about"></span>
+              <div class="abt-Box_Inner flex">
+                <div class="box-image"><img src="img/家系図.png" alt=""></div>
+                <div class="box-text">
+                  <h1>代々血統が受け継がれ、<span>主人公が交代</span>していく物語</h3>
+                  <p>「『ジョジョ』って第何部だとか、主人公が何人もいたりだとか、複雑そう。コミックスも100冊くらい出てるし、タイトルが違うのもあるし、どこから読んでいいかわからない」という方は多いかもしれません。</p>
+                  <p>1987年に週刊少年ジャンプで連載を開始した『ジョジョの奇妙な冒険』は、第１部の主人公ジョナサン・ジョースターと、敵対するディオ・ブランドーとの因縁から始まる物語。その戦いはジョナサンの代だけでは決着せず、その子孫たちも巻き込んで100年以上続きます。主人公や舞台が交代していくのはそういう理由なのです。</p>
+                  <h1>人間の誇りと勇気を描き上げる<span>「人間讃歌」</span></h3>
+                  <p>第１部では謎の石仮面の力で不老不死の力を得たディオ、第２部では石仮面を創った“柱の一族”、第3部では100年の眠りから目覚めた一族因縁の仇敵が歴代主人公の前に立ちはだかります。この敵役たちが、とにかく強く、非常に魅力的。</p>
+                  <p>誇り高き初代主人公ジョナサン・ジョースター、頭脳戦が得意な２代目主人公ジョセフ・ジョースター、不言実行の３代目主人公・空条承太郎は、各部のラスボスに立ち向かっていきます。「ジョ」ナサン・「ジョ」ースターと、頭の音をとると“ジョジョ”になるから、『ジョジョの奇妙な冒険』なのです。</p>
+                  <p>作品のテーマは「人間讃歌」。『ジョジョ』に登場するキャラクターは善も悪も己の信念を貫きます。善悪を問わず、恐怖を克服する精神、困難に立ち向かう勇気が描かれます。これも作品の大きな特徴と言えます。</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
     <br>
 
             <section id="characters">
-                <h2><strong>各部のキャラクター</strong></h2>
+                <h2><strong>～CHARACTERS～</strong></h2>
 
                   <div class="abt-Chara">
                       <div class="abt-Chara_Inner">
                           <h3>第１部登場人物</h3>
                         <ul class="chara-list">
                               <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/01/img_chara_01.png" alt="ジョナサン・ジョースター"></div>
+                              <div class="chara-image"><img src="img/ジョナサン.png"></div>
                               <div class="chara-text">
                                   <p class="name">ジョナサン・ジョースター</p>
                                   <p class="detail">イギリス貴族の跡取り息子で、幼い頃に母親を事故で亡くしている。父親譲りの誇り高い精神、困難に立ち向かう勇気を持つ。</p>
                               </div>
                               </li>
                               <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/01/img_chara_02.png" alt="ディオ・ブランドー"></div>
+                              <div class="chara-image"><img src="img/ディオ.png" alt="ディオ・ブランドー"></div>
                               <div class="chara-text">
                                   <p class="name">ディオ・ブランドー</p>
                                   <p class="detail">ジョースター家に養子として引き取られた少年。明晰な頭脳と冷徹な野心の持ち主で、ジョースター家の財産乗っ取りを画策している。</p>
                               </div>
                               </li>
                               <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/01/img_chara_03.png" alt="ウィル・A・ツェペリ"></div>
+                              <div class="chara-image"><img src="img/ツェペリ男爵.png" alt="ウィル・A・ツェペリ"></div>
                               <div class="chara-text">
                                   <p class="name">ウィル・A・ツェペリ</p>
                                   <p class="detail">石仮面を発見した発掘隊の一員。石仮面の闇の力に対抗するため、厳しい修業の末、波紋法を体得。ジョナサンを指導する。</p>
                               </div>
                               </li>
                               <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/01/img_chara_04.png" alt="ロバート・E・O・スピードワゴン"></div>
+                              <div class="chara-image"><img src="img/スピードワゴン.png" alt="ロバート・E・O・スピードワゴン"></div>
                               <div class="chara-text">
                                   <p class="name">ロバート・E・O・スピードワゴン</p>
                                   <p class="detail">食屍鬼街の住人で、チンピラ達をまとめる兄貴分。ジョナサンの人間性に感銘を受け、ともに石仮面の力と戦うことになる。</p>
@@ -186,56 +257,56 @@
                         <h3>第2部登場人物</h3>
                           <ul class="chara-list">
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/02/img_chara_01.png" alt="ジョセフ・ジョースター"></div>
+                              <div class="chara-image"><img src="img/ジョセフ戦闘潮流.png" alt="ジョセフ・ジョースター"></div>
                               <div class="chara-text">
                                 <p class="name">ジョセフ・ジョースター</p>
                                 <p class="detail">祖父ジョナサンと違って、お調子者で明るい性格。嫌いな言葉は「努力」と「ガンバル」。抜け目のない駆け引き巧者で、頭脳戦を得意とする。生まれながらに波紋の資質を持つ。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/02/img_chara_02.png" alt="シーザー・Ａ・ツェペリ"></div>
+                              <div class="chara-image"><img src="img/シーザー.png" alt="シーザー・Ａ・ツェペリ"></div>
                               <div class="chara-text">
                                 <p class="name">シーザー・Ａ・ツェペリ</p>
                                 <p class="detail">柱の一族との因縁の対決に備え、腕を磨いていた波紋戦士。ジョナサンの師ウィル・Ａ・ツェペリの孫。キザな性格だが、一族の誇りを何よりも重んじる気高き精神の持ち主。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/02/img_chara_03.png" alt="リサリサ"></div>
+                              <div class="chara-image"><img src="img/リサリサ.png" alt="リサリサ"></div>
                               <div class="chara-text">
                                 <p class="name">リサリサ</p>
                                 <p class="detail">イタリアのヴェネチアに住む、素性一切が謎の女性戦士。シーザーの波紋の師であり、後にジョセフもリサリサの元でより強力な波紋を習得するべく特訓することになる。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/02/img_chara_04.png" alt="カーズ"></div>
+                              <div class="chara-image"><img src="img/カーズ.png" alt="カーズ"></div>
                               <div class="chara-text">
                                 <p class="name">カーズ</p>
                                 <p class="detail">柱の一族を統率する天才で、石仮面の創造主。唯一の弱点である太陽を克服するため「エイジャの赤石」を探している。光の流法（モード）を操る。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/02/img_chara_05.png" alt="エシディシ"></div>
+                              <div class="chara-image"><img src="img/エシディシ.png" alt="エシディシ"></div>
                               <div class="chara-text">
                                 <p class="name">エシディシ</p>
                                 <p class="detail">炎の流法（モード）を操るカーズの仲間。トリッキーな性格の持ち主で、不気味な存在感を放っている。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/02/img_chara_06.png" alt="ワムウ"></div>
+                              <div class="chara-image"><img src="img/ワムウ.png" alt="ワムウ"></div>
                               <div class="chara-text">
                                 <p class="name">ワムウ</p>
                                 <p class="detail">風の流法（モード）を操るカーズの部下。戦士としての誇りを重んじる、ストイックな性格の持ち主。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/02/img_chara_07.png" alt="ルドル・フォン・シュトロハイム"></div>
+                              <div class="chara-image"><img src="img/シュトロハイム.png" alt="ルドル・フォン・シュトロハイム"></div>
                               <div class="chara-text">
                                 <p class="name">ルドル・フォン・シュトロハイム</p>
                                 <p class="detail">ドイツ軍の将校。柱の男の未知の能力を軍事利用するべく、調査・発掘・研究を行っている。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/02/img_chara_08.png" alt="ロバート・Ｅ・Ｏ・スピードワゴン"></div>
+                              <div class="chara-image"><img src="img/スピードワゴン戦闘潮流.png" alt="ロバート・Ｅ・Ｏ・スピードワゴン"></div>
                               <div class="chara-text">
                                 <p class="name">ロバート・Ｅ・Ｏ・スピードワゴン</p>
                                 <p class="detail">第1部の激闘の後、アメリカに渡り、石油事業で大成功をおさめる。ジョナサンの妻・エリナ、その孫ジョセフを陰から支えている。</p>
@@ -248,49 +319,49 @@
                           <h3>第３部登場人物</h3>
                           <ul class="chara-list">
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/03/img_chara_01.png" alt="空条承太郎"></div>
+                              <div class="chara-image"><img src="img/空条承太郎SC.png" alt="空条承太郎"></div>
                               <div class="chara-text">
                                 <p class="name"><small>くうじょうじょうたろう</small><br>空条承太郎</p>
                                 <p class="detail">スタンドは「星の白金（スタープラチナ）」。ジョセフの孫。寡黙だが、やる時はやる性格。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/03/img_chara_02.png" alt="ジョセフ・ジョースター"></div>
+                              <div class="chara-image"><img src="img/ジョセフSC.png" alt="ジョセフ・ジョースター"></div>
                               <div class="chara-text">
                                 <p class="name">ジョセフ・ジョースター</p>
                                 <p class="detail">スタンドは「隠者の紫（ハーミットパープル）」。戦いの経験値は随一。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/03/img_chara_03.png" alt="花京院典明"></div>
+                              <div class="chara-image"><img src="img/花京院.png" alt="花京院典明"></div>
                               <div class="chara-text">
                                 <p class="name"><small>かきょういんのりあき</small><br>花京院典明</p>
                                 <p class="detail">スタンドは「法王の緑（ハイエロファントグリーン）」。冷静沈着な性格。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/03/img_chara_04.png" alt="ジャン・ピエール・ポルナレフ"></div>
+                              <div class="chara-image"><img src="img/ポルナレフSC.png" alt="ジャン・ピエール・ポルナレフ"></div>
                               <div class="chara-text">
                                 <p class="name">ジャン・ピエール・ポルナレフ</p>
                                 <p class="detail">スタンドは「銀の戦車（シルバーチャリオッツ）」。一行のムードメーカー。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/03/img_chara_05.png" alt="モハメド・アブドゥル"></div>
+                              <div class="chara-image"><img src="img/アブドゥル.png" alt="モハメド・アブドゥル"></div>
                               <div class="chara-text">
                                 <p class="name">モハメド・アブドゥル</p>
                                 <p class="detail">スタンドは「魔術師の赤（マジシャンズレッド）」。一行の軍師的な存在。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/03/img_chara_06.png" alt="イギー"></div>
+                              <div class="chara-image"><img src="img/イギー.png" alt="イギー"></div>
                               <div class="chara-text">
                                 <p class="name">イギー</p>
                                 <p class="detail">スタンドは「愚者（ザ・フール）」。一筋縄ではいかない性格の犬だが、実力は相当。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/03/img_chara_07.png" alt="DIO"></div>
+                              <div class="chara-image"><img src="img/DIO.png" alt="DIO"></div>
                               <div class="chara-text">
                                 <p class="name">DIO</p>
                                 <p class="detail">ジョセフの祖父ジョナサンの体を奪い、100年の眠りから復活。スタンド能力も身につけ、ジョースター一族の根絶を目論む。</p>
@@ -303,56 +374,56 @@
                           <h3>第４部登場人物</h3>
                           <ul class="chara-list">
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/04/img_chara_01.png" alt="東方仗助"></div>
+                              <div class="chara-image"><img src="img/仗助.png" alt="東方仗助"></div>
                               <div class="chara-text">
                                 <p class="name"><small>ひがしかたじょうすけ</small><br>東方仗助</p>
                                 <p class="detail">ジョセフ・ジョースターの隠し子。気立てのいい不良だが、キレた性格を併せ持つ。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/04/img_chara_02.png" alt="広瀬康一"></div>
+                              <div class="chara-image"><img src="img/康一.png" alt="広瀬康一"></div>
                               <div class="chara-text">
                                 <p class="name"><small>ひろせこういち</small><br>広瀬康一</p>
                                 <p class="detail">杜王町に住む正義感の強い少年。仗助と仲が良いため、様々な事件に巻き込まれていくハメになる。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/04/img_chara_03.png" alt="虹村億泰"></div>
+                              <div class="chara-image"><img src="img/億泰.png" alt="虹村億泰"></div>
                               <div class="chara-text">
                                 <p class="name"><small>にじむらおくやす</small><br>虹村億泰</p>
                                 <p class="detail">仗助、康一の同級生。仗助と敵対するも命を救われ、親友に。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/04/img_chara_04.png" alt="空条承太郎"></div>
+                              <div class="chara-image"><img src="img/空条承太郎DU.png" alt="空条承太郎"></div>
                               <div class="chara-text">
                                 <p class="name"><small>くうじょうじょうたろう</small><br>空条承太郎</p>
                                 <p class="detail">ジョセフの意思により、仗助に迫る危機を伝えるため杜王町を訪れる。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/04/img_chara_05.png" alt="ジョセフ・ジョースター"></div>
+                              <div class="chara-image"><img src="img/ジョセフDU.png" alt="ジョセフ・ジョースター"></div>
                               <div class="chara-text">
                                 <p class="name">ジョセフ・ジョースター</p>
                                 <p class="detail">東方朋子との大恋愛の末に生まれた仗助を助けるべく、杜王町に来訪。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/04/img_chara_06.png" alt="岸辺露伴"></div>
+                              <div class="chara-image"><img src="img/岸部露伴.png" alt="岸辺露伴"></div>
                               <div class="chara-text">
                                 <p class="name"><small>きしべろはん</small><br>岸辺露伴</p>
                                 <p class="detail">杜王町在住の天才漫画家。スタンド能力で人の記憶を読む事が可能。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/04/img_chara_07.png" alt="山岸由花子"></div>
+                              <div class="chara-image"><img src="img/由花子.png" alt="山岸由花子"></div>
                               <div class="chara-text">
                                 <p class="name"><small>やまぎしゆかこ</small><br>山岸由花子</p>
                                 <p class="detail">康一に一方的に想いを寄せる。怒らせると非常に怖いが、純な一面も。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/04/img_chara_08.png" alt="吉良吉影"></div>
+                              <div class="chara-image"><img src="img/吉良吉影DU.png" alt="吉良吉影"></div>
                               <div class="chara-text">
                                 <p class="name"><small>きらよしかげ</small><br>吉良吉影</p>
                                 <p class="detail">杜王町に住む殺人鬼。女性の手を偏愛し、殺人を犯さずにいられない性の持ち主。目立たぬよう努力し、静かに暮らしている。</p>
@@ -365,49 +436,49 @@
                           <h3>第５部登場人物</h3>
                           <ul class="chara-list">
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/05/img_chara_01.png" alt="ジョルノ・ジョバァーナ"></div>
+                              <div class="chara-image"><img src="img/ジョルノ.png" alt="ジョルノ・ジョバァーナ"></div>
                               <div class="chara-text">
                                 <p class="name">ジョルノ・ジョバァーナ</p>
                                 <p class="detail">父親はDIOだが、DIOの肉体はジョナサンのものであるため、ジョースターの血統も受け継ぐ。スタンドは「ゴールド・エクスペリエンス」。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/05/img_chara_02.png" alt="ブローノ・ブチャラティ"></div>
+                              <div class="chara-image"><img src="img/ブチャラティ.png" alt="ブローノ・ブチャラティ"></div>
                               <div class="chara-text">
                                 <p class="name">ブローノ・ブチャラティ</p>
                                 <p class="detail">スタンドは「スティッキィ・フィンガーズ」。揺るぎない信念、行動力を持ち、絶大な信頼を集めるチームのリーダー。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/05/img_chara_03.png" alt="レオーネ・アバッキオ"></div>
+                              <div class="chara-image"><img src="img/アバッキオ.png" alt="レオーネ・アバッキオ"></div>
                               <div class="chara-text">
                                 <p class="name">レオーネ・アバッキオ</p>
                                 <p class="detail">スタンドは「ムーディー・ブルース」。ブチャラティの部下。正義感溢れる警察官だったが、社会の矛盾に失望し、ついにはギャングになった。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/05/img_chara_04.png" alt="グイード・ミスタ"></div>
+                              <div class="chara-image"><img src="img/ミスタ.png" alt="グイード・ミスタ"></div>
                               <div class="chara-text">
                                 <p class="name">グイード・ミスタ</p>
                                 <p class="detail">スタンドは「セックス・ピストルズ」。ブチャラティの部下で、“単純に生きる”がモットーのチームのムードメーカー。射撃の才能は天才的。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/05/img_chara_05.png" alt="ナランチャ・ギルガ"></div>
+                              <div class="chara-image"><img src="img/ナランチャ.png" alt="ナランチャ・ギルガ"></div>
                               <div class="chara-text">
                                 <p class="name">ナランチャ・ギルガ</p>
                                 <p class="detail">スタンドは「エアロスミス」。ブチャラティの部下。人生に絶望していた時、自分を叱ってくれたブチャラティに恩を感じ、組織に入団。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/05/img_chara_06.png" alt="パンナコッタ・フーゴ"></div>
+                              <div class="chara-image"><img src="img/フーゴ.png" alt="パンナコッタ・フーゴ"></div>
                               <div class="chara-text">
                                 <p class="name">パンナコッタ・フーゴ</p>
                                 <p class="detail">スタンドは「パープル・ヘイズ」。ブチャラティの部下で、IQ152を誇るチームのブレーン役。暴行事件がきっかけで組織に入団した。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/05/img_chara_07.png" alt="トリッシュ・ウナ"></div>
+                              <div class="chara-image"><img src="img/トリッシュ.png" alt="トリッシュ・ウナ"></div>
                               <div class="chara-text">
                                 <p class="name">トリッシュ・ウナ</p>
                                 <p class="detail">組織のボスの娘。ボスの命令により、ブチャラティチームが彼女を目的地まで送り届ける護衛を任される。高飛車な15歳だが芯は強い。</p>
@@ -420,49 +491,49 @@
                           <h3>第６部登場人物</h3>
                           <ul class="chara-list">
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/06/img_chara_01.png" alt="空条徐倫"></div>
+                              <div class="chara-image"><img src="img/空条徐倫.png" alt="空条徐倫"></div>
                               <div class="chara-text">
                                 <p class="name"><small>くうじょうじょりーん</small><br>空条徐倫</p>
                                 <p class="detail">承太郎とアメリカ人女性の間に生まれる。父親譲りのタフさと冷静な判断力を持つ。スタンドは「ストーン・フリー」。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/06/img_chara_02.png" alt="空条承太郎"></div>
+                              <div class="chara-image"><img src="img/空条承太郎SO.png" alt="空条承太郎"></div>
                               <div class="chara-text">
                                 <p class="name"><small>くうじょうじょうたろう</small><br>空条承太郎</p>
                                 <p class="detail">徐倫の父親。徐倫が陰謀により投獄された事を知り、娘を助けるため刑務所へ向かう。40代になるがタフさは健在。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/06/img_chara_03.png" alt="エルメェス・コステロ"></div>
+                              <div class="chara-image"><img src="img/エルメェス.png" alt="エルメェス・コステロ"></div>
                               <div class="chara-text">
                                 <p class="name">エルメェス・コステロ</p>
                                 <p class="detail">スタンドは「キッス」。留置所で徐倫と友人になる。ある復讐を目的に刑務所へ入ってきた。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/06/img_chara_04.png" alt="F・F"></div>
+                              <div class="chara-image"><img src="img/F・F.png" alt="F・F"></div>
                               <div class="chara-text">
                                 <p class="name">F・F</p>
                                 <p class="detail">刑務所内湿地帯のプランクトンに「能力」と「記憶」のDISCを与えたことで生まれたミュータント。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/06/img_chara_05.png" alt="ウェザー・リポート"></div>
+                              <div class="chara-image"><img src="img/ウェザー・リポート.png" alt="ウェザー・リポート"></div>
                               <div class="chara-text">
                                 <p class="name">ウェザー・リポート</p>
                                 <p class="detail">スタンドは「ウェザー・リポート」。プッチ神父の手で記憶の大半を奪われている謎の男性囚人。寡黙な性格。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/06/img_chara_06.png" alt="ナルシソ・アナスイ"></div>
+                              <div class="chara-image"><img src="img/アナスイ.png" alt="ナルシソ・アナスイ"></div>
                               <div class="chara-text">
                                 <p class="name">ナルシソ・アナスイ</p>
                                 <p class="detail">スタンドは「ダイバー・ダウン」。極度の分解癖の持ち主。冷酷な性格だが、徐倫に想いを寄せている。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/06/img_chara_07.png" alt="エンリコ・プッチ"></div>
+                              <div class="chara-image"><img src="img/プッチ.png" alt="エンリコ・プッチ"></div>
                               <div class="chara-text">
                                 <p class="name">エンリコ・プッチ</p>
                                 <p class="detail">G.D.st.刑務所の教誨師。DIOの親友で、彼の遺した「天国へ行く方法」を実現するために暗躍する。</p>
@@ -476,35 +547,35 @@
                           <h3>第７部登場人物</h3>
                           <ul class="chara-list">
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/07/img_chara_01.png" alt="ジャイロ・ツェペリ"></div>
+                              <div class="chara-image"><img src="img/ジョニィ.png" alt="ジョニィ・ジョースター"></div>
                               <div class="chara-text">
                                 <p class="name">ジョニィ・ジョースター</p>
                                 <p class="detail">天才騎手だったが、慢心から半身不随に。失意の中で生きていたが、ジャイロの鉄球の「回転」に希望を見出し、レースに参加する。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/07/img_chara_02.png" alt="ジョニィ・ジョースター"></div>
+                              <div class="chara-image"><img src="img/ジャイロ.png" alt="ジャイロ・ツェペリ"></div>
                               <div class="chara-text">
                                 <p class="name">ジャイロ・ツェペリ</p>
                                 <p class="detail">ネアポリス王国の法務官で、死刑を司る一族に生まれる。不当な罪で投獄された少年を救うため、国王の恩赦を得るべくレースに参加する。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/07/img_chara_03.png" alt="スティーブン・スティール"></div>
+                              <div class="chara-image"><img src="img/スティーブン・スティール.png" alt="スティーブン・スティール"></div>
                               <div class="chara-text">
                                 <p class="name">スティーブン・スティール</p>
                                 <p class="detail">40年のキャリアを持つ歴戦のプロモーター。不幸なトラブルからドン底にあったが、起死回生の企画としてSBRレースを主催。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/07/img_chara_04.png" alt="ファニー・ヴァレンタイン"></div>
+                              <div class="chara-image"><img src="img/ルーシー.png" alt="ルーシー・スティール"></div>
                               <div class="chara-text">
                                 <p class="name">ルーシー・スティール</p>
                                 <p class="detail">スティーブン・スティールの妻。夫とはかなり歳がはなれているが、精神的に支えているのはルーシーの方。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/07/img_chara_05.png" alt="ファニー・ヴァレンタイン"></div>
+                              <div class="chara-image"><img src="img/ヴァレンタイン.png" alt="ファニー・ヴァレンタイン"></div>
                               <div class="chara-text">
                                 <p class="name">ファニー・ヴァレンタイン</p>
                                 <p class="detail">第23代アメリカ合衆国大統領。SBRレースの後見人だが、その真の目的は全米に散らばった「聖なる遺体」を探すことにある。</p>
@@ -517,28 +588,28 @@
                           <h3>第８部登場人物</h3>
                           <ul class="chara-list">
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/08/img_chara_01.png" alt="謎の青年・東方定助"></div>
+                              <div class="chara-image"><img src="img/定助.png" alt="謎の青年・東方定助"></div>
                               <div class="chara-text">
                                 <p class="name"><small>ひがしかたじょうすけ</small><br>謎の青年・東方定助</p>
                                 <p class="detail">災害によって出現した謎の隆起物「壁の目」のそばで発見された謎の青年。記憶を失っているが、謎の能力を持っている。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/08/img_chara_02.png" alt="広瀬康穂"></div>
+                              <div class="chara-image"><img src="img/康穂.png" alt="広瀬康穂"></div>
                               <div class="chara-text">
                                 <p class="name"><small>ひろせやすほ</small><br>広瀬康穂</p>
                                 <p class="detail">杜王町に住む女子大生。「壁の目」のそばで定助を発見し、救出。成り行きで彼の記憶探しに付き合う事に。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/08/img_chara_03.png" alt="東方常秀"></div>
+                              <div class="chara-image"><img src="img/常秀.png" alt="東方常秀"></div>
                               <div class="chara-text">
                                 <p class="name"><small>ひがしかたじょうしゅう</small><br>東方常秀</p>
                                 <p class="detail">東方家の次男。康穂に想いを寄せている。そのため、康穂が定助の世話をするのが気にいらず、何かにつけて文句をつける。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/08/img_chara_04.png" alt="吉良吉影"></div>
+                              <div class="chara-image"><img src="img/吉良吉影LION.png" alt="吉良吉影"></div>
                               <div class="chara-text">
                                 <p class="name"><small>きらよしかげ</small><br>吉良吉影</p>
                                 <p class="detail">定助の記憶を探る過程で登場する人物。どうやら定助と何らかのかかわりがあるらしい。</p>
@@ -551,35 +622,35 @@
                           <h3>第９部登場人物</h3>
                           <ul class="chara-list">
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/09/img_chara_01.png" alt="ジョディオ・ジョースター"></div>
+                              <div class="chara-image"><img src="img/ジョディオ.png" alt="ジョディオ・ジョースター"></div>
                               <div class="chara-text">
                                 <p class="name">ジョディオ・ジョースター</p>
                                 <p class="detail">オアフ島に暮らす少年。大富豪になることを夢見ており、そのヒントは目には見えない"仕組み"にあると考える。スタンド能力は重力のある雨を降らせる「11月の雨（ノーヴェンバー・レイン）」。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/09/img_chara_02.png" alt="ドラゴナ・ジョースター"></div>
+                              <div class="chara-image"><img src="img/ドラゴナ.png" alt="ドラゴナ・ジョースター"></div>
                               <div class="chara-text">
                                 <p class="name">ドラゴナ・ジョースター</p>
                                 <p class="detail">ジョディオの兄。女の子のファッションが大好きで、ブティックで働いている。スタンド能力は「スムース・オペレイターズ」。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/09/img_chara_03.png" alt="パコ・ラブランテス"></div>
+                              <div class="chara-image"><img src="img/パコ・ラブランテス.png" alt="パコ・ラブランテス"></div>
                               <div class="chara-text">
                                 <p class="name">パコ・ラブランテス</p>
                                 <p class="detail">鍛え上げられた肉体を持つ少年。盗みが大好きでゲーム感覚で他人の物を掏る。スタンド能力は、筋肉を自由自在に操る「THE ハッスル」。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/09/img_chara_04.png" alt="ウサギ・アロハオエ"></div>
+                              <div class="chara-image"><img src="img/ウサギ.png" alt="ウサギ・アロハオエ"></div>
                               <div class="chara-text">
                                 <p class="name">ウサギ・アロハオエ</p>
                                 <p class="detail">突如チームに加入した全身タイツの少年。<br class="pc_b">スタンド能力は、周囲にあるもので誰かが望むものに変身する「THE MATTEKUDASAI」。</p>
                               </div>
                             </li>
                             <li class="chara-item">
-                              <div class="chara-image"><img src="https://jojo-portal.com/wp-content/themes/jojo-portal/assets/images/common/about/09/img_chara_05.png" alt="メリル・メイ・チー"></div>
+                              <div class="chara-image"><img src="img/メリル・メイ・チー.png" alt="メリル・メイ・チー"></div>
                               <div class="chara-text">
                                 <p class="name">メリル・メイ・チー</p>
                                 <p class="detail">ジョディオが通う学校の校長先生で、副業にブティックを営むスーパーウーマン。その裏の顔は、ジョディオ達を指揮するチームの"ボス"。</p>
@@ -588,17 +659,23 @@
                           </ul>
                         </div>
                   </div>
-
-
-                <div class="arrows-and-dots arrows-and-dots-2"></div>
+                  <div>
+                    <div class="bbb-arrow"></div>             
+                  </div>
+<br>
                 
                 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
                 <script src="scripts.js"></script>
         </main>
         <footer>
-            <p>2024 樋口裕亮の奇妙なファンサイト</p>
-            <small>©荒木飛呂彦&LUCKY LAND COMMUNICATIONS/集英社・ジョジョの奇妙な冒険製作委員会</small>
+            <div class="kabuse">
+              <div class="portal-logo"><img src="img/img_logo.webp" art="jojo-portal-site"></div>
+            </div>
+            <div class="copylight">
+              <p>2024 樋口裕亮の奇妙なファンサイト</p>
+              <small>©荒木飛呂彦&LUCKY LAND COMMUNICATIONS/集英社・ジョジョの奇妙な冒険製作委員会</small>
+            </div>
         </footer>
     </div>
 </body>

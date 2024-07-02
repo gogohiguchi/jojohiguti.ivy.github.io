@@ -11,9 +11,9 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #666;
-    color: #000;
+    font-family: serif;
+    background-color: #444;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -39,10 +39,14 @@ header {
   text-align: center;
 }
 
+.logos ul{
+  margin-top: 10px;
+}
+
 nav {
     text-align: center;
     padding: 10px;
-    background-color: #444;
+    background-color: #001;
 }
 nav a {
     color: #fff;
@@ -57,17 +61,99 @@ section {
     margin-bottom: 20px;
 }
 h2 {
-    color: #333;
-}
-footer {
-    background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    bottom: 0;
-    width: 100%;
 }
-  
+p {
+  font-size: 18px;
+}
+/*footerの設定*/
+footer {
+  background:url(img/bg_kamen.webp)no-repeat;
+  background-color: #001;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  bottom: auto;
+  width: 100%;
+  height: 450px;
+}
+
+/*footerの画像設定*/
+.portal-logo {
+  margin-top: 70px;
+}
+
+/*著作権の表示設定*/
+.copylight {
+  margin-top: 180px;
+}
+
+/*強制的に上にスクロールbtn*/
+#btn1{
+  background: url(img/KILLER_QUEEN.jpg);
+  background-size: cover;
+  filter: brightness(0.8);
+  color:#fff;
+  text-shadow:                
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,  
+  -1px 1px 0 #000,  
+  1px 1px 0 #000;
+  font-family: serif;
+  font-size: 16px;
+  position:fixed;
+  bottom:75px;
+  right:15px;
+  cursor:pointer;
+  width:110px;
+  height:110px;
+  border-radius: 50%;
+}
+
+/*To Be Continued*/
+#btn2 img{
+  z-index: 1000; 
+  overflow: hidden; 
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
+  padding: 10px;
+  cursor: pointer;
+  width: 160px;
+  height: 70px;
+}
+
+/*物語のあらすじの設定*/
+.abt-Box_Inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.abt-Box_Inner .box-image {
+  width: 560px;
+}
+
+.abt-Box_Inner .box-image img {
+  width: 100%;
+  height: auto;
+}
+
+.abt-Box_Inner .box-text {
+  width: 640px;
+  padding: 0 0 0 60px;
+}
+
+.abt-Box_Inner .box-text h1 {
+  font-size: 26px;
+  line-height: 1.83333;
+}
+
+
+
+
+/*slickスライドの設定*/
 .slider {
   width: 80%;
   margin: 20px auto;
@@ -117,7 +203,6 @@ footer {
   color: #fff
 }
 
-
 .abt-Chara_Inner .chara-text {
   width: 450px;
   padding: 10px 0 0 30px
@@ -139,6 +224,7 @@ footer {
   line-height: 1.85714
 }
 
+/*部の情報の設定　slickスライダー*/
 .slide-text {
   text-align: center;
   color: white;
@@ -155,4 +241,25 @@ footer {
 .slide-text p {
   margin: 5px 0;
   font-size: 16px;
+}
+
+/*スライドの矢印の設定*/
+.slide_arrow {
+  width: 70px;
+}
+.aaa-arrow {
+  position: relative;
+  text-align: center;
+  margin: 24px 0;
+}
+.prev-arrow {
+  margin-right: 200px;
+}
+.next-arrow {
+  margin-left: 200px;
+}
+.bbb-arrow {
+  position: relative;
+  text-align: center;
+  margin: 24px 0;
 }
